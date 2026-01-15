@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Parents Portal Login - Nyangwa Boys High School</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #003366 0%, #001f3f 100%);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .login-container {
+      background: rgba(255, 255, 255, 0.95);
+      color: #333;
+      padding: 3rem;
+      border-radius: 16px;
+      box-shadow: 0 15px 50px rgba(0,0,0,0.4);
+      max-width: 450px;
+      width: 100%;
+      text-align: center;
+    }
+    .logo {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #003366;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-size: 2rem;
+      color: #003366;
+      margin-bottom: 2rem;
+    }
+    .form-group {
+      margin-bottom: 1.8rem;
+      text-align: left;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.6rem;
+      font-weight: 600;
+      color: #003366;
+    }
+    input {
+      width: 100%;
+      padding: 1rem;
+      border: 1.5px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    input:focus {
+      outline: none;
+      border-color: #003366;
+      box-shadow: 0 0 0 3px rgba(0,51,102,0.15);
+    }
+    .btn {
+      background: #003366;
+      color: white;
+      border: none;
+      padding: 1rem;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+      transition: all 0.3s;
+    }
+    .btn:hover {
+      background: #001f3f;
+      transform: translateY(-3px);
+    }
+    .extra-links {
+      margin-top: 1.5rem;
+      font-size: 0.95rem;
+    }
+    .extra-links a {
+      color: #003366;
+      text-decoration: none;
+    }
+    .extra-links a:hover { text-decoration: underline; }
+    .motto {
+      margin-top: 2rem;
+      font-size: 1.1rem;
+      color: #555;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <div class="logo">Nyangwa Boys High School</div>
+    <h1>Parents Portal</h1>
+
+    <form action="#" method="post"> <!-- In real use: point to auth endpoint -->
+      <div class="form-group">
+        <label for="username">Username / Admission Number</label>
+        <input type="text" id="username" name="username" placeholder="e.g. ADM12345 or email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit" class="btn">Login</button>
+    </form>
+
+    <div class="extra-links">
+      <a href="#">Forgot Password?</a> | <a href="contact.html">Need Help?</a>
+    </div>
+
+    <p class="motto">Learn with determination, Serve with dedication</p>
+  </div>
+
+</body>
+</html>
