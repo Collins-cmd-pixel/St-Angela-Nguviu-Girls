@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Download Application Form</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacC, "Segoe UI", Roboto, sans-serif;
+      background: #f8f9fc;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 720px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #1a3c6d;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      color: #555;
+      margin-bottom: 40px;
+      font-size: 1.1rem;
+    }
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: #1e73be;
+      color: white;
+      padding: 16px 36px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.15rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(30,115,190,0.25);
+      border: none;
+      cursor: pointer;
+    }
+    .download-btn:hover {
+      background: #155a9a;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(30,115,190,0.35);
+    }
+    .download-btn svg {
+      width: 24px;
+      height: 24px;
+    }
+    .note {
+      margin-top: 40px;
+      color: #666;
+      font-size: 0.95rem;
+    }
+    .formats {
+      margin: 25px 0;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Application Form</h1>
+  <p class="subtitle">Academic Year 2026</p>
+
+  <a href="application-form-2026.pdf" 
+     class="download-btn" 
+     download="Application_Form_2026.pdf">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+    </svg>
+    Download Application Form (PDF)
+  </a>
+
+  <div class="formats">
+    File format: PDF • Size: ≈ 320 KB
+  </div>
+
+  <p class="note">
+    • Make sure you have the latest version of Adobe Acrobat Reader<br>
+    • Fill the form using black/blue pen or type directly in the PDF fields
+  </p>
+</div>
+
+</body>
+</html>
