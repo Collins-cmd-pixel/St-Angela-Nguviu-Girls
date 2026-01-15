@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nyangwa Boys High School - Typhoons</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      background: #f8f9fa;
+    }
+    /* Navigation */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #1100ffe8; /* Dark blue */
+      color: white;
+      padding: 1rem 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: block;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 ;
+      text-align: center;
+    }
+    .logo{
+        font-size: 37px;
+        text-align: center;
+        font-weight: bold;
+    }
+    }
+    .nav-links{
+        text-align: center;
+        justify-content: space-between;
+    }
+    . nav-links a:hover {
+      color: #FFD700; /* Yellow hover */
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 50vh;
+      min-height: 400px;
+      background: url(logo.jpg) center/cover no-repeat;
+      /* REPLACE ABOVE URL WITH YOUR REAL GROUP PHOTO URL */
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 51, 102, 0.5); /* Dark blue overlay */
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    .motto {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.1;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+    }
+    .tagline {
+      font-size: 24px;
+      margin-bottom: 2rem;
+      color: yellow;
+      font-weight: bold;
+    }
+
+    /* Mission Section (Yellow) */
+    .mission {
+      background: white; /* white */
+      color: #003366;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+    .mission-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .mission h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .mission p {
+      font-size: 1.3rem;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto 2rem;
+    }
+    .btn {
+      display: inline-block;
+      background: #003366;
+      color: white;
+      padding: 1rem 2.5rem;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 600;
+      margin: 0.5rem;
+      transition: all 0.3s;
+    }
+    .btn:hover {
+      background: #001f3f;
+      transform: translateY(-3px);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .motto { font-size: 2.5rem; }
+      .nav-container a { margin: 10px; font-size: 1.2rem; }
+    }
+    a{
+        color: orange;
+        text-decoration: none;
+        font-size: 22px;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+    div{
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+      <div class="nav-contaoner">
+        <div class="logo">Nyangwa Boys High School</div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="academics.html">Academics</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+         </div>
+       </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="motto">Learn with determination,<br>Serve with dedication</h1>
+      <p class="tagline">Welcome to our institution where we believe in shaping the leaders of tomorrow by turning boys into men of character, intellect, and integrity.</p>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="mission">
+    <div class="mission-container">
+      <h2>Our Mission</h2>
+      <p>Our mission is to transform young boys into disciplined, knowledgeable, honorable, and compassionate young men, preparing them for future leadership roles in society.</p>
+      
+      <a href="onlineapp.html" class="btn">Apply Now</a>
+      <a href="parent.html" class="btn">Parent Portal</a>
+    </div>
+  </section>
+
+</body>
+</html>
