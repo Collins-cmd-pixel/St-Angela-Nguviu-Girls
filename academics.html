@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Academics - Nyangwa Boys High School</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; color: #333; background: #f8f9fa; line-height: 1.6; }
+
+    /* Navigation (consistent across site) */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #1100ffe8;
+      color: white;
+      padding: 1rem 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: block;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 ;
+      text-align: center;
+    }
+    .logo { font-size: 37px; font-weight: bold; }
+    .nav-links a {
+      color: orange;
+      text-decoration: none;
+      margin-left: 10px;
+      font-weight: bold;
+      font-size: 22px;
+    }
+    .nav-links a:hover { color: #FFD700; }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      height: 50vh;
+      min-height: 400px;
+      background: url('logo.jpg') center/cover no-repeat;
+      /* REPLACE WITH REAL PHOTO: e.g., boys in science lab, class, or library */
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 51, 102, 0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+    .motto { font-size: 1.8rem; font-weight: 600; color: #FFD700; }
+
+    /* Main Content */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      margin-top: -100px;
+    }
+    section { margin-bottom: 6rem; }
+
+    h2 {
+      color: #003366;
+      font-size: 2.8rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    h2::after {
+      content: '';
+      width: 80px;
+      height: 4px;
+      background: #FFD700;
+      display: block;
+      margin: 1rem auto 0;
+    }
+
+    /* Curriculum Intro */
+    .intro { text-align: center; max-width: 900px; margin: 0 auto 3rem; font-size: 1.2rem; }
+
+    /* Departments Grid */
+    .departments-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .department-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .department-card:hover { transform: translateY(-10px); }
+    .dept-img {
+      height: 180px;
+      background-size: cover;
+      background-position: center;
+    }
+    .dept-content { padding: 1.5rem; text-align: center; }
+    .dept-content h3 { color: #003366; margin-bottom: 1rem; }
+
+    /* Performance */
+    .performance {
+      background: #003366;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 3rem auto 0;
+    }
+    .stat-item {
+      background: rgba(255,255,255,0.1);
+      padding: 2rem;
+      border-radius: 12px;
+    }
+    .stat-number { font-size: 3rem; font-weight: 700; color: #FFD700; }
+
+    /* CTA */
+    .cta { text-align: center; margin-top: 4rem; }
+    .btn {
+      display: inline-block;
+      background: #FFD700;
+      color: #003366;
+      padding: 1rem 2.5rem;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1.2rem;
+      transition: all 0.3s;
+    }
+    .btn:hover { background: #e6c200; transform: translateY(-3px); }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.5rem; }
+      .hero { height: 60vh; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">Nyangwa Boys High School</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academics.html">Academics</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Academics at Nyangwa Boys</h1>
+      <p class="motto">Excellence Through Determination & Dedication</p>
+    </div>
+  </section>
+
+  <div class="container">
+
+    <!-- Curriculum Overview -->
+    <section>
+      <h2>Competency-Based Education (CBE)</h2>
+      <p class="intro">
+        Nyangwa Boys High School fully embraces the Competency-Based Education (CBE) for Senior Secondary levels. We focus on developing 7 core competencies: communication & collaboration, critical thinking & problem solving, creativity & imagination, citizenship, digital literacy, learning to learn, and self-efficacy. Our approach ensures boys are equipped for real-world success while maintaining strong academic performance.
+      </p>
+    </section>
+
+    <!-- Departments / Subjects -->
+    <section>
+      <h2>Our Academic Departments</h2>
+      <div class="departments-grid">
+        <div class="department-card">
+          <div class="dept-img" style="background-image: url('logo.jpg');"></div>
+          <div class="dept-content">
+            <h3>Science</h3>
+            <p>Biology • Chemistry • Physics </p>
+          </div>
+        </div>
+        <div class="department-card">
+            <div class="dept-img" style="background-image: url('langs.jpg')"></div>
+            <div class="dept-content">
+                <h3>Languages</h3>
+                <p>English • Kiswahili</p>
+            </div>
+        </div>
+        <div class="department-card">
+          <div class="dept-img" style="background-image: url('math.jpg');"></div>
+          <div class="dept-content">
+            <h3>Mathematics</h3>
+            <p>Mathematics • Additional Mathematics</p>
+          </div>
+        </div>
+        <div class="department-card">
+          <div class="dept-img" style="background-image: url('humans.jpg');"></div>
+          <div class="dept-content">
+            <h3>Humanities</h3>
+            <p> History & Government • Geography • CRE</p>
+          </div>
+        </div>
+        <div class="department-card">
+          <div class="dept-img" style="background-image: url('comp.jpg');"></div>
+          <div class="dept-content">
+            <h3>Technically Applied Sciences</h3>
+            <p>Computer Studies • Business Studies • Physical Education</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Performance Highlights -->
+    <section class="performance">
+      <h2>Our Academic Excellence</h2>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">B-</div>
+          <p>Mean KCSE Grade (Recent Years)</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">Top 2</div>
+          <p>National Debate Champions (Multiple Times)</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">71.25%</div>
+          <p>University Transition Rate</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta">
+      <a href="cale.html" class="btn">View Full Academic Calendar</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
