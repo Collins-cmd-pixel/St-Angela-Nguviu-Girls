@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Application - 2025/2026 Intake</title>
+  <style>
+    :root {
+      --primary: #1e40af;
+      --primary-dark: #1e3a8a;
+      --light: #f8fafc;
+      --gray: #64748b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--light);
+      color: #1e293b;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .header h1 {
+      color: var(--primary-dark);
+      font-size: 2.1rem;
+    }
+
+    .form-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+      padding: 40px;
+      margin-bottom: 30px;
+    }
+
+    .form-section {
+      margin-bottom: 36px;
+    }
+
+    .form-section h2 {
+      color: var(--primary);
+      margin-bottom: 20px;
+      font-size: 1.35rem;
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 8px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: #334155;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: all 0.2s;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(30,64,175,0.15);
+    }
+
+    .full-width {
+      grid-column: 1 / -1;
+    }
+
+    .checkbox-group {
+      margin: 16px 0;
+    }
+
+    .submit-btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 16px 40px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s;
+      width: 100%;
+      max-width: 400px;
+      margin: 30px auto 0;
+      display: block;
+    }
+
+    .submit-btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .note {
+      font-size: 0.9rem;
+      color: #64748b;
+      text-align: center;
+      margin-top: 24px;
+    }
+
+    @media (max-width: 768px) {
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>Online Application Form</h1>
+    <p>Academic Year 2025 / 2026 Intake</p>
+  </div>
+
+  <form class="form-card" id="applicationForm" action="https://formsubmit.co/your@email.com" method="POST">
+    
+    <!-- ===== Personal Information ===== -->
+    <div class="form-section">
+      <h2>1. Personal Details</h2>
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="firstName">First Name *</label>
+          <input type="text" id="firstName" name="FirstName" required>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name / Surname *</label>
+          <input type="text" id="lastName" name="LastName" required>
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth *</label>
+          <input type="date" id="dob" name="DateOfBirth" required>
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender *</label>
+          <select id="gender" name="Gender" required>
+            <option value="">Select...</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+          </select>
+        </div>
+        <div class="form-group full-width">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="Email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="Phone" placeholder="+2547XXXXXXXX" required>
+        </div>
+        <div class="form-group">
+          <label for="idNumber">National ID / Passport No.</label>
+          <input type="text" id="idNumber" name="IDNumber">
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== Programme Selection ===== -->
+    <div class="form-section">
+      <h2>2. Programme of Choice</h2>
+      <div class="form-group">
+        <label for="program">Select Programme *</label>
+        <select id="program" name="Programme" required>
+          <option value="">Choose programme...</option>
+          <option value="BSC Computer Science">BSc Computer Science</option>
+          <option value="BBA Business Administration">BBA Business Administration</option>
+          <option value="BED Education Arts">Bachelor of Education (Arts)</option>
+          <option value="Nursing">BSc Nursing</option>
+          <option value="Diploma IT">Diploma in Information Technology</option>
+          <option value="Other">Other (please specify below)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="otherProgram">If Other, please specify:</label>
+        <input type="text" id="otherProgram" name="OtherProgramme">
+      </div>
+    </div>
+
+    <!-- ===== Education Background ===== -->
+    <div class="form-section">
+      <h2>3. Education Background</h2>
+      <div class="form-group full-width">
+        <label for="highestQual">Highest Qualification *</label>
+        <select id="highestQual" name="HighestQualification" required>
+          <option value="">Select...</option>
+          <option value="KCSE">KCSE</option>
+          <option value="Diploma">Diploma</option>
+          <option value="Degree">Bachelor's Degree</option>
+          <option value="Masters">Master's Degree</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="kcseIndex">KCSE Index Number (if applicable)</label>
+        <input type="text" id="kcseIndex" name="KCSE_Index">
+      </div>
+      <div class="form-group">
+        <label for="kcseYear">KCSE Year</label>
+        <input type="number" id="kcseYear" name="KCSE_Year" min="2000" max="2025">
+      </div>
+    </div>
+
+    <!-- ===== Declaration & Submit ===== -->
+    <div class="form-section">
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" name="Declaration" value="Agreed" required>
+          I certify that the information provided is true and correct to the best of my knowledge.
+        </label>
+      </div>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit Application</button>
+
+    <p class="note">After submission you will receive a confirmation email within 24 hours (check spam folder)</p>
+  </form>
+</div>
+
+</body>
+</html>
